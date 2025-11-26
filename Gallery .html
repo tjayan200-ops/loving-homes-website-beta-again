@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery - Loving Homes</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+
+<header>
+  <div class="logo">Loving Homes</div>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="facilities.html" class="nav-link">Facilities</a></li>
+      <li><a href="quiz.html" class="nav-link">Pet Quiz</a></li>
+      <li><a href="packages.html" class="nav-link">Packages</a></li>
+      <li><a href="about.html" class="nav-link">About Us</a></li>
+      <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+  <button id="themeToggle" class="theme-btn"><i class="fa-solid fa-moon"></i></button>
+</header>
+
+<main>
+  <section id="gallery" class="gallery-section reveal fade-up">
+    <div class="gallery-header">
+      <h2>Guest Gallery &amp; Testimonials</h2>
+      <p>Real moments from stays at Loving Homes. Filter by activity and see what owners say.</p>
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="playtime">Playtime</button>
+        <button class="filter-btn" data-filter="spa">Spa</button>
+        <button class="filter-btn" data-filter="suites">Suites</button>
+        <button class="filter-btn" data-filter="training">Training</button>
+      </div>
+    </div>
+
+    <div class="gallery-grid">
+      <figure class="gallery-item" data-category="playtime">
+        <img src="https://images.unsplash.com/photo-1507149833265-60c372daea22?auto=format&fit=crop&w=1200&q=80" alt="Dog enjoying playtime in the yard" loading="lazy" width="1200" height="800" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='https://placehold.co/1200x800?text=Playtime';">
+        <figcaption>Playtime in the yard</figcaption>
+      </figure>
+      <figure class="gallery-item" data-category="spa">
+        <img src="https://images.unsplash.com/photo-1556228578-8ea4b1d299b2?auto=format&fit=crop&w=1200&q=80" alt="Dog getting groomed at spa" loading="lazy" width="1200" height="800" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='https://placehold.co/1200x800?text=Spa';">
+        <figcaption>Spa grooming session</figcaption>
+      </figure>
+      <figure class="gallery-item" data-category="suites">
+        <img src="https://images.unsplash.com/photo-1535930891776-0c02f84f91cc?auto=format&fit=crop&w=1200&q=80" alt="Cozy suite with plush bedding" loading="lazy" width="1200" height="800" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='https://placehold.co/1200x800?text=Suite';">
+        <figcaption>Cozy luxury suite</figcaption>
+      </figure>
+      <figure class="gallery-item" data-category="training">
+        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1200&q=80" alt="Agility training with dog" loading="lazy" width="1200" height="800" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='https://placehold.co/1200x800?text=Training';">
+        <figcaption>Agility training</figcaption>
+      </figure>
+      <figure class="gallery-item" data-category="playtime">
+        <img src="https://images.unsplash.com/photo-1518020382113-a7e8

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Quiz - Loving Homes</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+
+<header>
+  <div class="logo">Loving Homes</div>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="facilities.html" class="nav-link">Facilities</a></li>
+      <li><a href="quiz.html" class="nav-link active">Pet Quiz</a></li>
+      <li><a href="packages.html" class="nav-link">Packages</a></li>
+      <li><a href="about.html" class="nav-link">About Us</a></li>
+      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+  <button id="themeToggle" class="theme-btn"><i class="fa-solid fa-moon"></i></button>
+</header>
+
+<main>
+  <section id="quiz" class="quiz-section reveal fade-up">
+    <h2>Discover Your Pet's Personality</h2>
+    <form id="petQuiz" novalidate>
+      <label for="breed">Pet Breed:</label>
+      <input type="text" id="breed" placeholder="e.g., Labrador" required>
+
+      <label for="energy">Energy Level:</label>
+      <select id="energy" required>
+        <option value="">Select energy level</option>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+
+      <label for="temperament">Temperament:</label>
+      <select id="temperament" required>
+        <option value="">Select temperament</option>
+        <option value="calm">Calm</option>
+        <option value="playful">Playful</option>
+        <option value="anxious">Anxious</option>
+      </select>
+
+      <label for="needs">Special Needs:</label>
+      <select id="needs" required>
+        <option value="">Select needs</option>
+        <option value="quiet">Quiet &amp; private</option>
+        <option value="active">Outdoor &amp; active</option>
+        <option value="social">Social &amp; interactive</option>
+      </select>
+
+      <button type="submit">See Recommendations</button>
+    </form>
+
+    <div class="quiz-result" id="quizResult" style="display:none;"></div>
+  </section>
+</main>
+
+<a href="contact.html" class="cta">Book Now</a>
+
+<footer>
+  <p>&copy; 2025 Loving Homes. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
